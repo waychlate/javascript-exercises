@@ -5,6 +5,7 @@ const reverseString = function(string) {
         let char = string[i]
         returnedString += char;
     }
+    
     return returnedString;
 };
 
