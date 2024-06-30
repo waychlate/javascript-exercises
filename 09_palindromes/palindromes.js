@@ -1,5 +1,6 @@
 const palindromes = function (string) {
-    return (string == string.split().reverse())
+    let illegal = ["!", ".", ",", "?", " "];
+    return (string.toLowerCase().split('').filter(char => !illegal.includes(char)).join('') == string.toLowerCase().split('').filter(char => !illegal.includes(char)).reverse().join(''))
 };
 
 // Do not edit below this line
